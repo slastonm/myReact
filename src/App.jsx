@@ -13,6 +13,15 @@ import UseEffectComp from './components/UseEffectComp'
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Home from './Pages/Home';
 import About from './Pages/About'
+
+//Підключаєм бутстрап 
+// Спочатку встановлюємо його в наш проект 
+// npm install bootstrap@5.3.3
+import 'bootstrap/dist/css/bootstrap.min.css';
+// якщо потрібен js
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
+// Запускаємо проетк npm run dev
+
 function App() {
   let product = 'mobile';
   let productPrice = 250;
@@ -27,12 +36,12 @@ function App() {
       <Router>
       <Header></Header>
         <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
+          <ul className='d-flex'>
+            <li className='p-3'>
+              <Link className='btn btn-danger' to="/">Home</Link>
             </li>
-            <li>
-              <Link to="/about">About</Link>
+            <li className='p-3'>
+              <Link className='btn btn-danger' to="/about">About</Link>
             </li>
           </ul>
         </nav>
