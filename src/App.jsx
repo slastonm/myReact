@@ -21,7 +21,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // якщо потрібен js
 // import 'bootstrap/dist/js/bootstrap.bundle.min';
 // Запускаємо проетк npm run dev
-
+import Stars from './components/Stars'
 function App() {
   let product = 'mobile';
   let productPrice = 250;
@@ -34,6 +34,7 @@ function App() {
   return (
     <>
       <Router>
+      <Stars></Stars>
       <Header></Header>
         <nav>
           <ul className='d-flex'>
